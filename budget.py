@@ -12,3 +12,10 @@ spendibile = stipendio - spese_fisse - risparmio_mensile
 print(spendibile, "€ spendibili al mese")
 spendibile_al_giorno = spendibile / giorni_rimasti
 print(f"oggi spendi {spendibile_al_giorno:.2f} euro")
+tipo_spesa = input("qual era la spesa? ")
+risposta = input("quanto era la spesa? ")
+importo = float(risposta)
+print(f"ti restano {spendibile_al_giorno - importo:.2f} da spendere")
+print(f"{tipo_spesa} pagato {importo}")
+with open("spese.csv", "a") as f:
+    f.write(f"{oggi},{tipo_spesa},{importo:.2f}\n")
