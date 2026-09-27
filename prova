@@ -1,0 +1,6 @@
+pezzi = "rosso,verde,blu".split(",")
+print(pezzi)
+print(pezzi[0])
+print(pezzi[1])
+print(pezzi[2])
+print(pezzi[3])
