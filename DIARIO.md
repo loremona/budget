@@ -15,3 +15,9 @@ for riga in f: scorre un file riga per riga senza sapere quante sono
 dentro le graffe di una f-string può andare anche pezzi[1], non solo un nome
 il rientro decide quante volte una riga gira — è la cosa che ti è costata più tempo oggi, e ora la sai per esperienza
 e il concetto più importante: chi legge un file deve conoscere il formato di chi l'ha scritto. L'ordine dei campi è un accordo, e vale finché non lo cambi tu
+l'accumulatore: una variabile a zero prima del ciclo, che dentro si somma addosso un pezzo per volta. È lo schema più usato in programmazione, e adesso l'hai scritto
+- True e False: una condizione non è un valore, è una domanda che risponde sì o no
+- if: esegue il blocco rientrato solo quando la risposta è sì
+- .startswith() per riconoscere l'inizio di una stringa
+- :02d per avere 09 invece di 9
+- e il rientro, di nuovo, da tutti e due i lati: la somma doveva stare dentro, la stampa fuori
