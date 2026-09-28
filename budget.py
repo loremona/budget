@@ -19,8 +19,13 @@ print(f"ti restano {spendibile_al_giorno - importo:.2f} da spendere")
 print(f"{tipo_spesa} pagato {importo}")
 with open("spese.csv", "a") as f:
     f.write(f"{oggi},{tipo_spesa},{importo:.2f}\n")
+totale = 0
+mese_corrente = f"{oggi.year}-{oggi.month:02d}"
 with open("spese.csv", "r") as f:
     for riga in f:
         riga_pulita = riga.strip()
         pezzi = riga_pulita.split(",")
         print(f"il {pezzi[0]} hai speso {pezzi[2]}€ per {pezzi[1]}")
+        if pezzi[0].startswith(mese_corrente):
+            totale = totale + float(pezzi[2])
+print(f"totale speso: {totale:.2f}€")

@@ -1,6 +1,5 @@
-pezzi = "rosso,verde,blu".split(",")
-print(pezzi)
-print(pezzi[0])
-print(pezzi[1])
-print(pezzi[2])
-print(pezzi[3])
+x = 10
+y = x 
+x = 99
+print(y)
+print(x)
